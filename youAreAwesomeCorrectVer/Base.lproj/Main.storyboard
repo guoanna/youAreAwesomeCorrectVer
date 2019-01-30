@@ -39,7 +39,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="messageLabel" destination="339-cM-7GX" id="aBz-Bi-vk4"/>
+                        <outlet property="awesomeLbl" destination="339-cM-7GX" id="aBz-Bi-vk4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
