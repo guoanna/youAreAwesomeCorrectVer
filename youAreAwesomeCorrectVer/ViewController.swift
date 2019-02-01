@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     @IBAction func showMessagePressed(_ sender: UIButton) {
        let message1 = "You are Da Bomb!!!"
-        let message2 = "You are Great!"
+        let message2 = "You are Great!!"
         let message3 = "You are Amazing!"
         
         if awesomeLbl.text == message1 {
