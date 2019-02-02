@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var awesomeLbl: UILabel!
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,21 +19,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showMessagePressed(_ sender: UIButton) {
-       let message1 = "You are Da Bomb!!!"
-        let message2 = "You are Great!!"
-        let message3 = "You are Amazing!"
+        let messages = ["You are Awesome!",
+                "You are Fantastic!",
+                "When the Genius Bar needs help, they call you",
+                "You brighten my day!","You make me smile!",
+                "Hey, Fabulous!",
+                "You are tremendous!",
+                "You have the design skills of Jony Ive!",
+                "I can't wait to download your app!"]
         
-        if awesomeLbl.text == message1 {
-            awesomeLbl.text = message2
-        }
-            
-        else if awesomeLbl.text == message2{
-            awesomeLbl.text = message3
-        }
-            
-        else{
-            awesomeLbl.text = message1
-        }
+        awesomeLbl.text = messages.randomElement()!
+        
+        
+//        awesomeLbl.text = messages[index]
+//        if index == messages.count-1 {
+//            index = 0
+//        }
+//        else{
+//            index += 1
+//        }
+//
+
         
     }
     
