@@ -28,7 +28,16 @@ class ViewController: UIViewController {
                 "You have the design skills of Jony Ive!",
                 "I can't wait to download your app!"]
         
-        awesomeLbl.text = messages.randomElement()!
+        var newIndex = -1
+        
+        repeat{
+            newIndex = Int.random(in: 0..<messages.count)
+        } while index == newIndex
+        
+        index = newIndex
+        awesomeLbl.text = messages[index]
+        
+//        awesomeLbl.text = messages.randomElement()!
         
         
 //        awesomeLbl.text = messages[index]
